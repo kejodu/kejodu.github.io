@@ -1,0 +1,281 @@
+*{
+box-sizing:border-box;
+}
+
+/* Base Styles --------------------- */
+body{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  margin: 0;
+  color: #878787;
+/*  font-family: 'Lato', sans-serif;*/
+  font-family: 'Noto Serif', serif;
+}
+
+p{
+
+}
+
+h1{
+  margin-top:0;
+  text-align:center;
+  text-transform:uppercase;
+  color: black;
+  text-shadow: 0 1px 1px black;
+}
+
+h2{
+  margin: 0;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+li,ul{
+  list-style:none;
+  padding: 20px 5px;
+}
+/* Main Styles --------------------- */
+.main-header {
+  padding-top: 250px;
+  height: 900px;
+  background:   url('../img/img1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.hero-content{
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 400px;
+  padding: 65px;
+  margin: auto;
+  outline: 5px double #ffffff;
+  outline-offset: 8px;
+}
+
+.arrow{
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+.primary-content{
+  width: 100%;
+  margin: auto;
+  overflow:auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary-content,
+.quaternary-content{
+  display:flex;
+  flex-direction:column;
+  background-color:#f6f6f6;
+  padding-bottom: 60px;
+}
+
+.tertiary-content{
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+
+.primary-left-content{
+  width: 100%;
+  float: left;
+  clear:both;
+}
+
+.primary-right-content{
+  width: 100%;
+  clear:both;
+}
+
+.main-footer{
+  text-align: center;
+  color: white;
+  background-color: grey;
+  padding: 2em 0;
+}
+/*http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block*/
+.profile-pic{
+  width: 100%;
+
+}
+
+.greeting{
+  text-transform:uppercase;
+  text-align: center;
+}
+
+.about-me{
+  width: 100%;
+  font-size: 13px;
+  line-height: 34px;
+  margin-bottom: 0;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.intro{
+  width: 100%;
+  padding: 80px 60px;
+  min-height: 300px;
+  font-size: 13px;
+  line-height: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+/* ================================= 
+  Titles and Fonts
+==================================== */
+.education-title,
+.about-me-title,
+.gallery-title{
+  display:inline-block;
+  text-align:left;
+  margin-top:0;
+  padding-top:20px;
+  clear:both;
+}
+
+.secondary-heading,
+.tertiary-heading,
+.quaternary-heading{
+  align-self:center;
+}
+
+
+/* ================================= 
+  Lists
+==================================== */
+.education-list{
+  padding-left: 0;
+  margin-top: 60px;
+}
+
+.education-list li{
+  margin-bottom: 20px;
+}
+
+.list-description{
+  margin:0;
+  padding-left:20px;
+}
+
+/* ================================= 
+  Icons
+==================================== */
+.icons{
+  padding-top: 30px;
+  margin-left:20px;
+}
+
+
+/* ================================= 
+  Cards
+==================================== */
+.wrap-card{
+  position:relative;
+}
+.card{
+  background-color: #f6f6f6;
+  padding: 30px 35px 45px 35px;
+  margin-top: 30px;
+  border: 1px solid rgba(129, 129, 129, 0.1);
+}
+
+
+
+/* ================================= 
+  Gallery
+==================================== */
+.gallery-pics{
+  width:100%;
+  padding:1px;
+  border:1px solid #021a40;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .primary-content{
+    display: flex;
+  }
+  .primary-left-content{
+    width: 50%;
+    float: left;
+    clear:both;
+  }
+  
+  .primary-right-content{
+    width: 50%;
+    clear:both;
+  }
+
+  .secondary-content,
+  .tertiary-content,
+  .quatenary-content{
+    padding: 0 60px;
+    padding-bottom: 60px;
+  }
+  .gallery-list{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .gallery-list li{
+    flex: 1 50%;
+  }
+
+}
+
+@media(min-width: 1020px){
+  .gallery-list li{
+    flex: 1 30%;
+  }
+
+  .wrap-card{
+    display:flex;
+  }
+
+  .card{
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .card:nth-child(1){
+    margin-right:15px;
+  }
+  .card:nth-child(2){
+    margin-left:15px;
+  }
+
+}
+
+
+@media(min-width: 1420px){
+  .gallery-list li{
+    flex: 1 30%;
+  }
+  .intro{
+    padding: 80px 190px;
+  }
+}

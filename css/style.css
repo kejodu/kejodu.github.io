@@ -197,6 +197,7 @@ li,ul{
   padding: 30px 35px 45px 35px;
   margin-top: 30px;
   border: 1px solid rgba(129, 129, 129, 0.1);
+  text-align: center;
 }
 
 
@@ -236,6 +237,12 @@ li,ul{
     padding: 0 60px;
     padding-bottom: 60px;
   }
+  
+  .card{
+	text-align: left;  
+	  
+  }
+  
   .gallery-list{
     display:flex;
     flex-wrap:wrap;

@@ -229,8 +229,12 @@ li,ul{
 #overlay img{
   width: 70%;
   margin-top: 5%;
-  border-color: white;
-  border: 10px solid;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+#overlay p{
+  color:white;
 }
 
 /* ================================= 

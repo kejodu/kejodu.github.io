@@ -127,6 +127,7 @@ li,ul{
   margin-bottom: 0;
   padding-left:15px;
   padding-right:15px;
+  padding-top: 20px;
 }
 
 .intro{
@@ -274,6 +275,15 @@ li,ul{
 }
 
 @media(min-width: 1020px){
+  .about-me{
+	  max-width: 505px;
+  }
+
+  .secondary-content{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .gallery-list li{
     flex: 1 30%;
   }

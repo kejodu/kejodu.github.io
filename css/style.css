@@ -227,6 +227,10 @@ li,ul{
   left:0;
   text-align: center;
   display:none;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex !important; */
+
 }
 
 #overlay img{

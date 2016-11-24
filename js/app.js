@@ -18,8 +18,10 @@ $(".gallery-list a").click(function(event){
   //Update overlay with the image linked in the link
   $image.attr("src", imageLocation);  
   
-  //Show the overlay
+  //Show the overlay and add "display flex" overlay
   $overlay.show();
+  $("#overlay").css("display", "flex");
+  
   //Get child's alt attribute and set caption
   var imageCaption = $(this).children("img").attr("alt");
   $caption.text(imageCaption);

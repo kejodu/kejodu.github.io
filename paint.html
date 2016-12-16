@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Paint App</title>
+	<link rel="stylesheet" href="css/paint.css">
+	</head>
+	<body>
+	  <canvas width="500" height="300"></canvas>
+	  <div class="select-color">
+		<ul>
+		  <li class="red colors"></li>
+		  <li class="blue colors"></li>
+		  <li class="green colors"></li>
+		</ul>
+	  </div>
+	  <div class="controls">
+		<button id="new-color-btn">New Color</button>
+		<div class="color-selector">
+		  <div class="new-color"></div>
+		  <div class="sliders">
+			<p>
+			  <label>Red</label>
+			  <input id="red" type="range" min=0 max=255 value=0></input>
+			</p>
+			<p>
+			  <label>Blue</label>
+			  <input id="blue" type="range" min=0 max=255 value=0></input>
+			</p>
+			<p>
+			  <label>Green</label>
+			  <input id="green" type="range" min=0 max=255 value=0></input>
+			</p>
+		  </div>
+		  <button id="add-new-color">Add New Color</button>
+		</div>
+	  </div>
+	 <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/paint.js"></script>
+	</body>
+</html>

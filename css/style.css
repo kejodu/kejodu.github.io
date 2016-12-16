@@ -74,14 +74,16 @@ li,ul{
 }
 
 .secondary-content,
-.quaternary-content{
+.quaternary-content,
+.quinary-content{
   display:flex;
-  flex-direction:column;
+  flex-direction: column;
   background-color:#f6f6f6;
   padding-bottom: 60px;
 }
 
-.tertiary-content{
+.tertiary-content,
+.quinary-content{
   display:flex;
   flex-direction:column;
   box-sizing:border-box;
@@ -91,6 +93,13 @@ li,ul{
   padding-bottom: 60px;
 }
 
+.quinary-content{
+  align-items: center;
+}
+
+.quinary-heading{
+	margin: 20px
+}
 
 .primary-left-content{
   width: 100%;
@@ -140,6 +149,26 @@ li,ul{
   margin-bottom: 0;
 }
 
+#contact-me-form{
+	display:flex;
+	flex-direction: column;
+	max-width: 400px;
+	width: 100%;
+}
+
+#contact-me-form input[type="text"],
+#contact-me-form input[type="email"],
+#contact-me-form input[type="submit"],
+#contact-me-form textarea{
+	width: 100%;
+	padding: 5%;
+	margin-bottom: 5%;
+}
+
+input[type="submit"]{
+    background-color: #2ebc99;
+    color: white;
+}
 
 
 /* ================================= 
@@ -195,7 +224,7 @@ li,ul{
   position:relative;
 }
 .card{
-  background-color: #f6f6f6;
+  background-color: #fff;
   padding: 30px 35px 45px 35px;
   margin-top: 30px;
   border: 1px solid rgba(129, 129, 129, 0.1);

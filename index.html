@@ -68,13 +68,28 @@
                 <li><a href="img/P1131416.jpg"><img class="gallery-pics" src="img/P1131416.jpg" alt="Seurasaari, 2016"></a></li>
                 <li><a href="img/PA022395.jpg"><img class="gallery-pics" src="img/PA022395.jpg" alt="Vuosaaren Silta 2016"></a></li>
               </ul>
+			  <!-- <ul> -->
+				<!-- <li><a href="paint.html"><img src="img/paint.html" alt="paint"></a></li> -->
+			  <!-- </ul> -->
          </div>
+		 <div class="quinary-content">
+			<div class="quinary-heading">
+				<h2 class="contact-title">Contact Me!</h2>
+			</div>
+			<form id="contact-me-form" action="form_process.php" method="post">
+				<input type="text" name="userName" placeholder="Your Name">
+				<input type="email" name="userEmail" placeholder="Email Address">
+				<textarea name="userMessage" placeholder="Type Your Message Here"></textarea>
+				<input type="submit" name="userSubmit" value="Send">
+			</form>
+		 </div>
       </div>
       <footer class="main-footer">
          <p>2016 Kevin Dunn</p>
       </footer>
      <script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
      <script type="text/javascript" src="js/app.js"></script>
+	 <?php include 'form_process';?>
    </body>
 </html>
 
